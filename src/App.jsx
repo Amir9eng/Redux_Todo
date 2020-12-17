@@ -1,9 +1,11 @@
 import "./App.scss";
+import Default from "./components/Default";
 
 function App() {
   return (
     <div className="App">
-      <h1>Hello World</h1>
+      <h1 className="heading">Todo</h1>
+      <Default />
     </div>
   );
 }
