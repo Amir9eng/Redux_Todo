@@ -6,14 +6,11 @@ const defaultTasks = [
 const reducer = (state = defaultTasks, action) => {
   switch (action.type) {
     case "ADD_TODO":
-      return [
-        ...state,
-        {
-          id: action.payload.id,
-          task: action.payload.task,
-          done: false,
-        },
-      ];
+      return state.concat({
+        id: action.payload.id,
+        task: action.payload.task,
+        done: false,
+      });
       break;
     case "DELETE_TODO":
       return state.filter((task) => task.id !== action.payload.id);
@@ -24,7 +21,6 @@ const reducer = (state = defaultTasks, action) => {
         return task;
       });
       break;
-
     default:
       return state;
   }
