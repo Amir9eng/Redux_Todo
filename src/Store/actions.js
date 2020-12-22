@@ -1,4 +1,4 @@
-export const addTodo = (task, id) => ({
+export const addTodo = (id, task) => ({
   type: "ADD_TODO",
   payload: {
     id,

@@ -16,6 +16,44 @@
      font-size: 3rem;
      text-align: center;
      padding-top: 3rem;
+     margin: 1rem 0;
+  }
+  .container{
+    margin: 0 auto;
+    max-width: 35rem;
+  }
+  .Tasks{
+    display: flex;
+    flex-direction: column;
+    width: 35rem;
+    padding: .5rem .5rem;
+    background: white;
+    .task{
+      display: flex;
+      justify-content: space-between;
+      margin: .5rem 0;
+    }
+  }
+  .form{
+    padding: 2rem 0;
+     color: #615E5E;
+     margin: auto;
+     width: 35rem;
+
+    span{
+      font-size: 14px;
+      display: block;
+      margin: .5rem 0;
+    }
+    input{
+      width: 35rem;
+      font-size: 1.2rem;
+      background: transparent;
+      outline: none;
+      border: none;
+      border-bottom: #007762 solid 3px;
+      
+    }
   }
 }
 

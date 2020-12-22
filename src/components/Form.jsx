@@ -16,8 +16,8 @@ export default function Form() {
   };
   return (
     <form className="form" onSubmit={handleSubmit}>
-      <span>Add a new Task:</span>
-      <input type="text" name="task" placeholder="Input Task and hit Enter" />
+      <span>Add a new todo:</span>
+      <input type="text" name="task" placeholder="Enter Task and press Enter" />
     </form>
   );
 }
