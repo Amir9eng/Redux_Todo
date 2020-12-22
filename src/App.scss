@@ -26,12 +26,19 @@
     display: flex;
     flex-direction: column;
     width: 35rem;
-    padding: .5rem .5rem;
-    background: white;
+    padding: .2rem;
+
     .task{
       display: flex;
+      background: white;
       justify-content: space-between;
-      margin: .5rem 0;
+      padding: .5rem;
+      border-bottom: 1px solid #c7c2c2;
+      box-shadow: 2px;
+
+      .delete{
+        cursor: pointer;
+      }
     }
   }
   .form{

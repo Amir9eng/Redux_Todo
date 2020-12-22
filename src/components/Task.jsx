@@ -15,6 +15,7 @@ function Task() {
         >
           <span>{task.task}</span>
           <img
+            className="delete"
             src="./delete.svg"
             alt="delete"
             onClick={() => dispatch(deleteTodo(task.id))}
